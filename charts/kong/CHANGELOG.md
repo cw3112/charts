@@ -1,5 +1,33 @@
 # Changelog
 
+## 1.8.0
+
+### Improvements
+
+* Update Kong and Kong Enterprise default versions to 2.1.0 and 2.1.0.0.
+* Updated default controller version to 0.9.1.
+  ([#150](https://github.com/Kong/charts/pull/150))
+* Added support for ServiceMonitor targetLabels (for use with the Prometheus
+  Operator).
+  ([#162](https://github.com/Kong/charts/pull/162))
+* Automatically handle the [new port_maps
+  setting](https://github.com/Kong/kong/pull/5861) for the proxy service.
+  ([#169](https://github.com/Kong/charts/pull/169))
+* Add support for [hybrid mode
+  deployments](https://docs.konghq.com/latest/hybrid-mode/).
+  ([#160](https://github.com/Kong/charts/pull/160))
+
+
+### Fixed
+
+* Fixed an issue with improperly-rendered listen strings.
+  ([#155](https://github.com/Kong/charts/pull/155))
+
+### Documentation
+
+* Improved inline documentation of `env` in values.yaml.
+  ([#163](https://github.com/Kong/charts/pull/163))
+
 ## 1.7.0
 
 ### Improvements
